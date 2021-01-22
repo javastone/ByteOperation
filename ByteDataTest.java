@@ -51,13 +51,14 @@ public class ByteDataTest
     public void testByteAndWithHexadeciaml()
     {
         int a = -3;  //11111101
-        assertEquals(128, a & 0x80);  // we can use this to check if the bit 7 value is 1
-        assertEquals(64, a & 0x40);  // we can use this to check if the bit 6 value is 1
-        assertEquals(32, a & 0x20);  // we can use this to check if the bit 5 value is 1
-        assertEquals(16, a & 0x10);  // we can use this to check if the bit 4 value is 1
-        assertEquals(8, a & 0x08);  // we can use this to check if the bit 3 value is 1
-        assertEquals(4, a & 0x04);  // we can use this to check if the bit 2 value is 1
-        assertEquals(0, a & 0x02);  // we can use this to check if the bit 1 value is 1
-        assertEquals(1, a & 0x01);  // we can use this to check if the bit 0 value is 1
+        assertEquals(128, a & 0x80);  // we can use this to check if bit 7 value is 1
+        assertEquals(64, a & 0x40);  // we can use this to check if bit 6 value is 1
+        assertEquals(32, a & 0x20);  // we can use this to check if bit 5 value is 1
+        assertEquals(16, a & 0x10);  // we can use this to check if bit 4 value is 1
+        assertEquals(8, a & 0x08);  // we can use this to check if bit 3 value is 1
+        assertEquals(4, a & 0x04);  // we can use this to check if bit 2 value is 1
+        assertEquals(0, a & 0x02);  // we can use this to check if bit 1 value is 1
+        assertEquals(1, a & 0x01);  // we can use this to check if bit 0 value is 1
     }
 }
+
