@@ -7,6 +7,15 @@ import static org.junit.Assert.assertEquals;
 
 public class ByteDataTest
 {
+    @Test
+    public void printBitValue(){
+        for (int i = 128; i > -129; i--)
+        {
+            byte b1 = (byte) i;
+            String s1 = String.format("%8s", Integer.toBinaryString(b1 & 0xFF)).replace(' ', '0');
+            System.out.println(i + " " + s1); // 10000001
+        }
+    }
 
     @Test
     public void testByteAnd()
@@ -21,7 +30,7 @@ public class ByteDataTest
     @Test
     public void testByteOr()
     {
-        // & bitwise add  -  the result bit value is 1 if both number bit value is 1
+        // & bitwise or  -  the result bit value is 1 if either number bit value is 1
         int a = 5; //00101
         int b = 9; //01001
         int result = a | b;  //01101 (13)
@@ -61,4 +70,3 @@ public class ByteDataTest
         assertEquals(1, a & 0x01);  // we can use this to check if bit 0 value is 1
     }
 }
-
