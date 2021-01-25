@@ -18,7 +18,7 @@ public class ByteDataTest
     }
 
     @Test
-    public void testByteAnd()
+    public void testBitAnd()
     {
         // & bitwise add  -  the result bit value is 1 if both number bit value is 1
         int a = 5; //00101
@@ -28,7 +28,7 @@ public class ByteDataTest
     }
 
     @Test
-    public void testByteOr()
+    public void testBitOr()
     {
         // & bitwise or  -  the result bit value is 1 if either number bit value is 1
         int a = 5; //00101
@@ -38,7 +38,7 @@ public class ByteDataTest
     }
 
     @Test
-    public void testByteXOr()
+    public void testBitXOr()
     {
         // ^ bitwise XOr  -  the result bit value is 1 if corresponding bits are different
         int a = 5; //00101
@@ -48,7 +48,7 @@ public class ByteDataTest
     }
 
     @Test
-    public void testByteComplement()
+    public void testBitComplement()
     {
         // ~ bitwise complement  -  unary operator, that inverse each bit
         int a = 5; //00101
@@ -57,7 +57,7 @@ public class ByteDataTest
     }
 
     @Test
-    public void testByteAndWithHexadeciaml()
+    public void testBitAndWithHexadeciaml()
     {
         int a = -3;  //11111101
         assertEquals(128, a & 0x80);  // we can use this to check if bit 7 value is 1
