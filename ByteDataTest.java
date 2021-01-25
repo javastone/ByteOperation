@@ -40,7 +40,7 @@ public class ByteDataTest
     @Test
     public void testBitXOr()
     {
-        // ^ bitwise XOr  -  the result bit value is 1 if corresponding bits are different
+        // ^ bitwise exclusive or  -  the result bit value is 1 if corresponding bits are different
         int a = 5; //00101
         int b = 9; //01001
         int result = a ^ b;  //01100  (12)
@@ -54,6 +54,24 @@ public class ByteDataTest
         int a = 5; //00101
         int result = ~a;  //11111010  (-6)
         assertEquals(-6, result);
+    }
+
+    @Test
+    public void testBitLeftShift()
+    {
+        // << bitwise left shift by y position
+        int a = 5; //0000101
+        int result = a<<2;  //10100
+        assertEquals(20, result);
+    }
+
+    @Test
+    public void testBitRightShift()
+    {
+        // >> bitwise right shift by y position
+        int a = 20; //0010100
+        int result = a>>2;  //101
+        assertEquals(5, result);
     }
 
     @Test
